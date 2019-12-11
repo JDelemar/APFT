@@ -10,6 +10,6 @@ alt: quickweight
 project-date: December 2019
 client: Client
 category: Category
-description: Descripion.
+description: Quick weight screening.
 
 ---
