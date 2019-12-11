@@ -4,8 +4,8 @@ subtitle: APFT Score
 layout: default
 modal-id: 1
 date: 2019-12-08
-img: score.png
-thumbnail: score.png
+img: Score.PNG
+thumbnail: Score.PNG
 alt: Score
 project-date: December 2019
 client: Client

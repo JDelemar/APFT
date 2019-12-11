@@ -4,9 +4,9 @@ subtitle: Quick Weight
 layout: default
 modal-id: 4
 date: 2019-12-08
-img: quickweight.png
-thumbnail: quickweight.png
-alt: quickweight
+img: QuickWeight.PNG
+thumbnail: QuickWeight.PNG
+alt: Quick Weight
 project-date: December 2019
 client: Client
 category: Category

@@ -4,8 +4,8 @@ subtitle: Body Fat Worksheet
 layout: default
 modal-id: 2
 date: 2019-12-08
-img: bodyfatworksheet.png
-thumbnail: bodyfatworksheet.png
+img: BodyFatWorksheet.PNG
+thumbnail: BodyFatWorksheet.PNG
 alt: Body Fat Worksheet
 project-date: December 2019
 client: Client

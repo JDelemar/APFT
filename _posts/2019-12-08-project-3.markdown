@@ -4,8 +4,8 @@ subtitle: Profile
 layout: default
 modal-id: 1
 date: 2019-12-08
-img: profile.png
-thumbnail: profile.png
+img: Profile.PNG
+thumbnail: Profile.PNG
 alt: Profile
 project-date: December 2019
 client: Client
