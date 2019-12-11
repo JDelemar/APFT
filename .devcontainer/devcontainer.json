@@ -1,0 +1,42 @@
+{
+    "name": "Jekyll",
+
+    // Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
+    "dockerFile": "Dockerfile",
+
+    "workspaceMount": "src=${localWorkspaceFolder},dst=/workspace,type=bind,consistency=cached",
+    "workspaceFolder": "/workspace",
+
+    // The optional 'runArgs' property can be used to specify additional runtime arguments.
+	"runArgs": [
+		// Uncomment the next line to use Docker from inside the container. See https://aka.ms/vscode-remote/samples/docker-in-docker for details.
+		// "-v","/var/run/docker.sock:/var/run/docker.sock",
+
+		// Uncomment the next line if you will use a ptrace-based debugger like C++, Go, and Rust
+		// "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined",
+
+		// Uncomment the next line to use a non-root user. On Linux, this will prevent
+		// new files getting created as root, but you may need to update the USER_UID
+		// and USER_GID in .devcontainer/Dockerfile to match your user if not 1000.
+        // "-u", "vscode",        
+    ],
+    
+    // Publish ports
+    "appPort": [ 4000 ],
+
+    // Use 'settings' to set *default* container specific settings.json values on container create. 
+	// You can edit these settings after create using File > Preferences > Settings > Remote.
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+        // alpine
+        // "terminal.integrated.shell.linux": "/bin/sh"
+    },
+
+    // Run commands after the container is created.
+    // "postCreateCommand": "",
+
+    // Add the IDs of extensions you want installed when the container is created in the array below.
+    "extensions": [
+        // "dbaeumer.vscode-eslint"
+    ]
+}

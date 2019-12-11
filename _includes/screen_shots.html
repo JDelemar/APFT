@@ -1,0 +1,62 @@
+<!-- Portfolio Grid Section -->
+    <section id="screen-shots" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Screen Shots</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="row">
+                    {% assign index = 1 %}
+                    {% for post in site.posts %}
+                        {% assign mod = forloop.index | modulo: 2 %}
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                            <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+                                <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered img-portfolio-thumb" alt="">
+                            </a>
+                            <div class="portfolio-caption text-center">
+                                <h4>{{ post.title }}</h4>
+                                <p class="text-muted">{{ post.subtitle }}</p>
+                            </div>
+                        </div>
+                        {% if mod == 0 %}
+                        <div class="row"></div>
+                        {% endif %}
+                    {% endfor %}
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="bluedot">
+                        <li>Automatically calculate APFT score</li>
+                        <li>Calculate and store body fat data</li>
+                        <li>Check standard weight table compliance</li>
+                        <li>Store information for multiple Soldiers</li>
+                        <li>Automatically fill out Adobe PDF or PureEdge forms and email them</li>
+                        <li>Contains excerpt from FM 7-22 to read for APFT</li>
+                        <li>Contains AR 600-9 for weight control information</li>
+                        <li>Timer for Pushup/Situp/Run</li>
+                        <li>Store Soldier shirt numbers</li>
+                        <li>Tools for counting repetitions and laps</li>
+                        <li>Forms are filled from within the app, no data is sent to another location</li>
+                    </ul>
+                </div>
+            </div>
+            <br />
+            <div class="row text-center">
+                <div class="hidden-xs col-sm-12">
+                    <div class="page-header">
+                        <h4>APFT Calculator on the iPad</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="hidden-xs col-sm-12">
+                    <img src="img/app/APFT_files/iPadAPFT.png" alt="" style="border: none; height: 500px; " />
+                </div>
+            </div>
+
+        </div>
+    </section>

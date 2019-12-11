@@ -1,0 +1,15 @@
+---
+title: Quick Weight
+subtitle: Quick Weight
+layout: default
+modal-id: 4
+date: 2019-12-08
+img: quickweight.png
+thumbnail: quickweight.png
+alt: quickweight
+project-date: December 2019
+client: Client
+category: Category
+description: Descripion.
+
+---

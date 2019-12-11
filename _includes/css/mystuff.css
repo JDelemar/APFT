@@ -1,0 +1,34 @@
+.app-icon {
+    height: 48px;
+}
+
+.app-icon img {
+    max-height: 150%;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+
+#slides ul.pagination {
+    visibility: hidden;
+}
+
+.img-portfolio-thumb {
+    width: 150px;
+    height: 260px;
+}
+
+.img-portfolio {
+    height: 450px;
+}
+
+ul.greencheck {
+    list-style-image: url('img/app/APFT_files/green%20check.png');
+}
+
+ul.bluedot {
+    list-style-image: url('img/app/APFT_files/blue.png');
+}
+
+textarea.form-control, input.form-control {
+    color: inherit;
+}
