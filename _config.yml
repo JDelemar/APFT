@@ -5,7 +5,7 @@ baseurl: /APFT
 title: APFT
 author: "James Delemar"
 email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: "Army Fitness APFT Calculator. Calculates and fills out Army Physical Fitness Test score cards and Army body fat worksheets based on U.S. Army APFT and weight control program standards."
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -18,7 +18,7 @@ social:
   # - title: bitbucket 
   #   url: http://bitbucket.org/jekyll
   - title: github
-    url: http://github.com/jekyll
+    url: https://github.com/JDelemar/APFT
 
 # Build settings
 markdown: kramdown
