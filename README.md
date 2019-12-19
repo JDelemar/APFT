@@ -20,8 +20,6 @@ Agency theme source [GitHub](https://github.com/y7kim/agency-jekyll-theme)
     - Connect contact form
     - Authentication with static site 
 
-# How to use
-
 ### Portfolio 
 
 Portfolio projects are in '/_posts'

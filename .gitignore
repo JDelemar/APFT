@@ -1,3 +1,6 @@
+.env
+.env.*
+
 .jekyll-cache
 
 _site

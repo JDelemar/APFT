@@ -32,3 +32,10 @@ ul.bluedot {
 textarea.form-control, input.form-control {
     color: inherit;
 }
+
+.navbar-default .navbar-nav>.active>a,
+.btn.btn-xl,
+.alert.alert-success,
+.close {
+    color: #222;
+}
