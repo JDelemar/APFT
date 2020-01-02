@@ -17,50 +17,50 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
-            // Not connected yet
-            $('#success').html("<div class='alert alert-success'>");
-            $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-                .append("</button>");
-            $('#success > .alert-success')
-                .append("<strong>Not connected to send messages yet. </strong>");
-            $('#success > .alert-success')
-                .append('</div>');
+            // // Not connected yet
+            // $('#success').html("<div class='alert alert-success'>");
+            // $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+            //     .append("</button>");
+            // $('#success > .alert-success')
+            //     .append("<strong>Not connected to send messages yet. </strong>");
+            // $('#success > .alert-success')
+            //     .append('</div>');
 
-            // clear all fields
-            $('#contactForm').trigger("reset");
+            // // clear all fields
+            // $('#contactForm').trigger("reset");
 
-            // $.ajax({
-            //     url: 'http://localhost:3000/api/email',
-            //     type: 'POST',
-            //     data: {
-            //         name: name,
-            //         email: email,
-            //         message: message,
-            //     },
-            //     cache: false,
-            //     success: function(result) {
-            //         $('#success').html("<div class='alert alert-success'>");
-            //         $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-            //             .append("</button>");
-            //         $('#success > .alert-success')
-            //             .append("<strong>Your message has been sent. </strong>");
-            //         $('#success > .alert-success')
-            //             .append('</div>');
+            $.ajax({
+                url: 'https://sleepy-almeida-ee8173.netlify.com/.netlify/functions/mail', // 'http://localhost:9000/.netlify/functions/mail', // 'https://sleepy-almeida-ee8173.netlify.com/.netlify/functions/mail',
+                type: 'POST',
+                data: JSON.stringify({
+                    name: name,
+                    email: email,
+                    message: message,
+                }),
+                cache: false,
+                success: function(result) {
+                    $('#success').html("<div class='alert alert-success'>");
+                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                        .append("</button>");
+                    $('#success > .alert-success')
+                        .append("<strong>Your message has been sent. </strong>");
+                    $('#success > .alert-success')
+                        .append('</div>');
 
-            //         //clear all fields
-            //         $('#contactForm').trigger("reset");
-            //     },
-            //     error: function() {
-            //         $('#success').html("<div class='alert alert-danger'>");
-            //         $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-            //             .append("</button>");
-            //         $('#success > .alert-danger').append("<strong>Sorry " + name + ", it seems the mail server is not responding. Please try again later!");
-            //         $('#success > .alert-danger').append('</div>');
+                    //clear all fields
+                    $('#contactForm').trigger("reset");
+                },
+                error: function() {
+                    $('#success').html("<div class='alert alert-danger'>");
+                    $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                        .append("</button>");
+                    $('#success > .alert-danger').append("<strong>Sorry " + name + ", it seems the mail server is not responding. Please try again later!");
+                    $('#success > .alert-danger').append('</div>');
                     
-            //         //clear all fields
-            //         // $('#contactForm').trigger("reset");
-            //     },
-            // });
+                    //clear all fields
+                    // $('#contactForm').trigger("reset");
+                },
+            });
         },
         filter: function() {
             return $(this).is(":visible");
