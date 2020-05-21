@@ -9,16 +9,17 @@ Agency theme source [GitHub](https://github.com/y7kim/agency-jekyll-theme)
 
 # Start
 - Setup
-    - Get the github-pages gem `gem install github-pages`
-    - Serve in developer mode `jekyll serve --host 0.0.0.0`
+  - (optional) Start docker container `docker run --rm -it --name gh-pages -v $PWD:/workspace -p 4000:4000 jekyll/jekyll:4.0.0 /bin/bash`
+  - Get the github-pages gem `gem install github-pages`
+  - Serve in developer mode `jekyll serve --host 0.0.0.0`
 
 # TODO
 - Things to do
-    - Fix contrast for text on yellow background
-    - Fix link to App Store on iOS device
-    - Update jQuery and Bootstrap
-    - Connect contact form
-    - Authentication with static site 
+  - Fix contrast for text on yellow background
+  - Fix link to App Store on iOS device
+  - Update jQuery and Bootstrap
+  - Connect contact form
+  - Authentication with static site 
 
 ### Portfolio 
 

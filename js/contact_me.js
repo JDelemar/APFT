@@ -30,7 +30,7 @@ $(function() {
             // $('#contactForm').trigger("reset");
 
             $.ajax({
-                url: 'https://sleepy-almeida-ee8173.netlify.com/.netlify/functions/mail', // 'http://localhost:9000/.netlify/functions/mail', // 'https://sleepy-almeida-ee8173.netlify.com/.netlify/functions/mail',
+                url: 'https://jamesdelemar.com/api/mail', // 'http://localhost:4300/api/mail', // 'http://localhost:9000/.netlify/functions/mail', // 'https://sleepy-almeida-ee8173.netlify.com/.netlify/functions/mail',
                 type: 'POST',
                 data: JSON.stringify({
                     name: name,
